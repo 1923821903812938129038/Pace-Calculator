@@ -1,0 +1,173 @@
+body {
+  background-color:  #fceed1;
+  font-family: roboto, condensed;
+}
+
+.content-container {
+  background-color:#2d545e;
+  width: 500px;
+  padding: 20px;
+  border: solid 10px  #12343b;
+  border-radius: 18px;
+}
+
+.heading {
+  padding-right: 50px;
+}
+
+.calculation-heading {
+  color: #c89666;
+}
+
+.calc-time {
+  margin-bottom: 12px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  background-color: #c89666;
+  border: none;
+  border-radius: 30px;
+  transition: ease-in-out;
+  transition-delay: .1s;
+}
+
+.distance-heading {
+  padding-right: 15px;
+}
+
+.distance-header {
+  position: relative;
+}
+
+.instructions { /*position absolute*/
+  margin-left: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  left: 85px;
+  bottom: 10px;
+  visibility: hidden ;
+  opacity: 0;
+  transition: opacity .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.type-distance:hover + .instructions {
+  display: block;
+  background-color: black;
+  padding: 5px 8px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.pace-heading {
+  padding-right: 48px;
+}
+
+.time-input-area { /*mainheading*/ 
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.input-area {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+input {
+  border-radius: 5px;
+  background-color:  #fceed1;
+  border: solid  #12343b 5px;
+}
+
+.distance-header { /*mainheading*/
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.type-distance {
+  width: 50px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+label {
+  color:#c89666;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pickUnits {
+  margin: 0px 5px;
+} 
+
+button {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.time-inputs {
+  width: 50px;
+  height: 20px;
+}
+ 
+.pace-input-area { /*mainheading*/
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 5px;
+}
+
+.pace-button {
+  margin-left: 10px;
+  padding: 8px 10px;
+  background-color: #c89666;
+  border: none;
+  border-radius: 30px;
+  transition: ease-in-out;
+  transition-delay: .1s;
+}
+
+.pace-button:hover, .calc-time:hover {
+  cursor: pointer;
+  background-color: #e1b382;
+  transition: ease-in-out;
+  transition-delay: .1s;
+}
+
+.pace-input-chron {
+  width: 50px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.reset-button {
+  margin-left: 10px;
+  padding: 8px 10px;
+  background-color: #c89666;
+  border: none;
+  border-radius: 30px;
+  transition: ease-in-out;
+  transition-delay: .1s;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  background-color: #e1b382;
+  transition: ease-in-out;
+  transition-delay: .1s;
+}
+
+.pacePerUnit {
+  display: flex;
+}
+
+.milesDisplay, .kilometersDisplay { /*putting a comma between two elements allows you to target both*/
+  visibility: hidden;
+  color: #c89666;
+  background-color: #12343b;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+

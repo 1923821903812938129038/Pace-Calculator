@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pace Calculator</title>
+  <link rel="stylesheet" href="/calculator/calculator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/calculator/images/fav.icon.pace.png">
+</head>
+<body>
+
+  <div class="content-container">
+
+    <div class="time-input-area">
+
+      <div class="heading">
+        <h3 class="calculation-heading">Time</h3>
+      </div>
+
+    
+      <div class="input-area">
+        <input type="text" id="hours" 
+        placeholder="hours" 
+        class="time-inputs"> 
+      </div>
+    
+      <div class="input-area">
+        <input type="text" id="minutes" 
+        placeholder="minutes"
+        class="time-inputs">
+      </div>
+      
+      <div class="input-area">
+        <input type="text" id="seconds" 
+        placeholder="seconds"
+        class="time-inputs">
+      </div>
+
+      <button class="calc-time" id="calcTime" onclick="calcTime()">
+        calc time
+      </button>
+    
+    </div>
+    
+    
+    
+    
+      <div class="distance-header">
+        <div class="distance-heading">
+          <h3 class="calculation-heading">Distance</h3>
+        </div>
+        <input class="type-distance" 
+        type="text" id="distance" 
+        placeholder="distance">
+        <div class="instructions">input mi or km</div> 
+        <input type="radio" class="pickUnits"  onclick="milesRadio()"
+        id="mi" name="unitz"> <!--without same name attribute the radios behave like checkboxes-->
+          <label>mi</label>
+        <input type="radio" class="pickUnits" onclick="kilometersRadio()"
+        id="km" name="unitz">
+          <label>km</label>
+      </div>
+    
+      
+    
+    
+    <div class="pace-input-area">
+      <div class="pace-heading">
+        <h3 class="calculation-heading">Pace</h3>
+      </div>
+      <div>
+        <input type="text" 
+        class="pace-input-chron" 
+        id="paceMinutes"
+        placeholder="minutes">
+      </div>
+      <div>
+        <input type="text" 
+        class="pace-input-chron" 
+        id="paceSeconds"
+        placeholder="seconds">
+      </div>
+      <button id="calc-button" onclick="avgPace()"
+      class="pace-button">
+        calc pace
+      </button>
+      <button id="reset-button" onclick="reset()"
+      class="reset-button">
+        reset
+      </button>
+    </div>
+
+    <div class="pacePerUnit">
+
+      <div class="milesDisplay" id="milesDisplay"> 
+        per mile
+      </div>
+  
+      <div class="kilometersDisplay" id="kilometersDisplay">
+        per kilometer
+      </div>
+
+    </div>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="/calculator/calculator.js"></script>
+
+  
+    
+
+  
+
+</body>
+</html>
